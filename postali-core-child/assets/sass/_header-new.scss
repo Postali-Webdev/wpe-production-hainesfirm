@@ -1,0 +1,19 @@
+header {
+    #header-top {
+        max-width: 98%;
+        .custom-logo-link {
+            .custom-logo {
+                max-height: max-content;
+                max-width: 285px;
+                width: 100%;
+                object-fit: contain;
+
+                @include respond(phone) {
+                    max-height: 90px;
+                    max-width: 270px;
+                    z-index: 99;
+                }
+            }
+        }
+    }
+}

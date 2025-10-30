@@ -1,0 +1,41 @@
+.columns {
+  .column-55 { width:55%; }
+  .column-40 { width:40%; }
+
+  .column-55,
+  .column-40 { 
+    @include respond(tab-port) {
+			width:100%;
+		}
+  }
+}
+
+.link:hover{
+  color: $blue !important;
+}
+
+.gform_wrapper {
+  input, textarea {
+    border: 0;
+    background: $ltgrey;
+  }
+}
+
+.pagination {
+  .nav-links {
+    gap: 10px;
+    .page-numbers{
+      &.current {
+        background: $blue !important;
+        color: $white;
+      }
+      &.prev, &.next {
+        background: $blue !important;
+        color: $white;
+        &:before {
+          background: $blue !important;
+        }
+      }
+    }
+  }
+}

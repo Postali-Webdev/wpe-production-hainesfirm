@@ -1,0 +1,122 @@
+/**
+ * Footer Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+**/
+
+.footer {    
+    .container {
+        .columns {
+            a:not(.social-link) {
+                color: $white !important;
+                &:hover {
+                    text-decoration: none !important;
+                }
+            }
+            .social-link {
+                &:hover {
+                    span {
+                        background-color: $blue !important;
+                        &:before {
+                            color: $white !important;
+                        }
+                    }
+                }
+                span {
+                    pointer-events: none !important;
+                }
+            }
+            .column-full {
+                .custom-logo-link {
+                    img {
+                        max-height: 55px;
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-contact {
+    padding: 10px 0;
+    background: #2375b3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    display:none; 
+
+    @include respond(phone) {
+        display:block;
+    }
+
+    .container {
+        padding: 0 !important;
+
+        .columns {
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .column-33 {
+                width: 31.33%;
+                text-align: center;
+                margin: 0 1%;
+                align-items: center;
+                padding: 0;
+                display: flex;
+
+                &:nth-of-type(2) {
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        top: 10%;
+                        height: 80%;
+                        content: "";
+                        border-left: 2px solid white;
+                        left: 0;
+                        opacity: .4;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        top: 10%;
+                        height: 80%;
+                        content: "";
+                        border-left: 2px solid white;
+                        right: 0;
+                        opacity: .4;
+                    }
+                }
+
+                a {
+                    text-align: center;
+                    justify-content: center;
+                    display: block;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: "Inter", sans-serif;
+                    font-weight: bold;
+                    display: block;
+                    width: 100%;
+
+                    img  {
+                        height: 30px;
+                        margin: 0 auto;
+                    }
+
+                    .text {
+                        margin-top: 10px;
+                        display: block;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

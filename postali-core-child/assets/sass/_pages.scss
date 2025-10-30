@@ -1,0 +1,173 @@
+/**
+ * Page Template Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+*/
+
+.page-template-page-landing {
+
+    ul.landing-box {
+        li {
+            background:$white !important;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+
+            @include respond(tab-land) {
+                width:49%;
+            }
+    
+            @include respond(phone) {
+                width:100%;
+                margin:10px 0 !important;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            &:hover {
+                a {
+                    text-decoration: underline;
+                    color:#181A21;
+                }
+            }
+
+            a {
+                color:#181A21;
+            }
+
+            .all-pages {
+                background: $blue !important;
+                color: white;
+                &.active {
+                    background:$blue !important;
+                }
+            }
+
+            ul.children {
+                background: $blue;
+
+                li {
+                    margin:0 !important;
+                    padding:0 !important;
+                    width:100%;
+                    min-height: auto;
+                    background:transparent !important;
+                    
+                    a {
+                        font-size: 16px !important;
+                        line-height: 120%;
+                        display: inline-block;
+                        margin-bottom: 10px !important;
+                        padding: 0;
+                        font-weight: normal;
+                        text-decoration: underline;
+                        color:$white;
+                    }
+
+                    &::after {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.post-type-archive-reviews {
+    section.main-content {
+        .columns {
+            justify-content: center;
+    
+            article {
+                border-color: $blue;
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+
+                p {
+                    margin-bottom: 1rem;
+        
+                    &.author {
+                        font-size: 15px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: $blue;
+                        letter-spacing: 0.75px;
+                    }
+                }
+        
+                img {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.post-type-archive-results {
+    .main-content {
+        .landing-box-container {
+            .accordions {
+                &_title.active, &_content {
+                    background: $blue !important;
+                    p {
+                        color: $white;
+                        &:after {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.single-post {
+    .banner .column-66.featured {
+        p.header-callout {
+            color: $blue !important;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.single-attorneys {
+    .main-content {
+        .attorney-img, .attorney-img img {
+            border-radius: 50%;
+            max-width: 225px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.blog {
+    .main-content {
+        article {
+            .meta-content {
+                background: $white;
+                .blog-date {
+                    color: $blue;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    color: $blk !important;
+                }
+            }
+        }
+    }
+}
+
+.search {
+    .main-content {
+        article {
+            h2 {
+                color: $blue;
+            }
+            p {
+                color: $blk;
+            }
+        }
+    }
+}
