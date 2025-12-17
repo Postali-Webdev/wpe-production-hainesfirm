@@ -252,6 +252,10 @@ get_header();?>
         </div>
     </section>
 
+    <?php if(get_field('include_awards','options')) : ?>
+        <?php get_template_part('block','awards'); ?>
+    <?php endif; ?>
+
     <section id="hp_services">
         <div class="container">
             <?php 
