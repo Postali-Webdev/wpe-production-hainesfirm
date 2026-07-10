@@ -183,7 +183,7 @@
                 <div class="spacer-15"></div>
                 <div class="main-contact">
                     <div class="contact-block-left">
-                        <a href="https://thehainesfirm.cliogrow.com/book" class="btn" target="blank">Schedule a Free Consultation</a>
+                        <a href="https://int8k.velolegalgroup.com/" class="btn" target="blank">Schedule a Free Consultation</a>
                     </div>
                 </div>
             </div>
