@@ -12,7 +12,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column-33 icon">
-                    <a href="https://thehainesfirm.cliogrow.com/book" target="blank">
+                    <a href="https://int8k.velolegalgroup.com/" target="blank">
                         <img src="/wp-content/uploads/2025/09/icon-calendar.png" alt=""><br>
                         <span class="text">Schedule a<br>Consultation</span>
                     </a>
