@@ -1078,7 +1078,7 @@
     .bottom_bg {
       position: absolute;
       right: -120px;
-      bottom: -100px;
+      bottom: -70px;
       max-width: 1000px;
       transform: rotate(-5deg);
 
@@ -1089,4 +1089,52 @@
       }
     }
   }
+
+    #name-change {
+        padding:80px 60px;
+
+        @include respond(phone) {
+            padding:80px 30px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 0 !important;
+
+            .name-top {
+                padding: 80px 13% 30px;
+
+                @include respond(phone) {
+                    padding:60px 30px 30px;
+                }
+
+                h2 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 1;
+
+                    @include respond(phone) {
+                        font-size: 35px;
+                    }
+
+                    span {
+                        color: #2375B3 !important;
+                        font-style: italic !important;
+                    }
+                }
+            }
+
+            .name-bottom {
+                background: #B3E3F2;
+                border-radius: 0 0 30px 30px;
+                padding: 30px;
+
+                img {
+                    height: auto;
+                    max-width: 250px;
+                }
+            }
+        }
+    }
 }

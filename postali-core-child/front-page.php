@@ -549,6 +549,24 @@ get_header();?>
         <img class ="bottom_bg" src="<?php echo $bottom_section_background; ?>" alt="">
         <?php endif; ?>
     </section>
+
+    <section id="name-change">
+        <div class="container">
+            <div class="columns">
+                <div class="column-full centered center name-top">
+                    <?php the_field('name_copy'); ?>
+                </div>
+                <div class="column-full centered center name-bottom">
+                    <?php 
+                    $image = get_field('name_logo');
+                    if( !empty( $image ) ): ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div><!-- #front-page -->
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
